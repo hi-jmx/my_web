@@ -1,0 +1,15 @@
+.login-page {
+  height: 100%;
+
+  position: relative;
+}
+
+.login-page .login-container {
+
+  position: absolute;
+  width: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}

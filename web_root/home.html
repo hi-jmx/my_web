@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/comm.css">
+  <link rel="stylesheet" href="./css/home.css">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script src="./js/home.js"></script>
+
+</head>
+
+
+<body>
+  <div class="home-page container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+
+        <div role="navigation">
+          <ul class="nav nav-pills  nav-stacked" id="nav">
+            <li role="presentation" data-index="1" class="active"><a href="javascript:void(0)">设备信息</a></li>
+            <li role="presentation" data-index="2"><a href="javascript:void(0)">网络配置</a></li>
+            <li role="presentation" data-index="3"><a href="javascript:void(0)">版本升级</a></li>
+            <li role="presentation" data-index="4"><a href="javascript:void(0)">重启</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-sm-10">
+
+        <div class="device device-info" style="display: block;">
+
+          <table class="table  table-bordered" style="width:50%">
+            <tr>
+              <td style="width:100px">MAC</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>版本</td>
+              <td>v1.1.0</td>
+            </tr>
+          </table>
+          <!-- <div>
+            <span>MAC:</span><span>22</span>
+          </div>
+          <div>
+            <span>版本:</span><span>22</span>
+          </div> -->
+        </div>
+
+        <div class="device device-set" style="display: none;width:50%">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">IP地址</label>
+              <input type="email" class="form-control" id="deviceIp" placeholder="IP地址">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">子网掩码</label>
+              <input type="password" class="form-control" id="mask" placeholder="子网掩码">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">网关</label>
+              <input type="password" class="form-control" id="gateway" placeholder="网关">
+            </div>
+
+            <button type="button" class="btn btn-default">提交</button>
+          </form>
+        </div>
+
+        <div class="device device-update" style="display: none;">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">文件</label>
+              <input type="file" id="exampleInputFile" onchange="change">
+            </div>
+
+            <!-- <button type="button" class="btn btn-default">提交</button> -->
+          </form>
+        </div>
+
+        <div class="device device-reboot" style="display: none;">
+          <button type="button" class="btn btn-default" id="reboot">重启</button>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
